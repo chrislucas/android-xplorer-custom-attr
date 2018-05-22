@@ -89,7 +89,6 @@ public class CustomDialogFragment extends DialogFragment {
 
     public synchronized static CustomDialogFragment newInstance(DialogFragmentOnclickListener dialogFragmentOnclickListener
             , @LayoutRes int layoutResource, @StyleRes int style, boolean cancelable) {
-        if (instance == null) {}
         instance = new SoftReference<>(new CustomDialogFragment());
         instance.get().dialogFragmentOnclickListener = dialogFragmentOnclickListener;
         instance.get().layoutResource = layoutResource;
@@ -101,7 +100,6 @@ public class CustomDialogFragment extends DialogFragment {
 
     public synchronized static CustomDialogFragment newInstance(DialogFragmentOnclickListener dialogFragmentOnclickListener
             , @LayoutRes int layoutResource, @StyleRes int style,  String titleDialogFragment, boolean cancelable) {
-        if (instance == null) {}
         instance = new SoftReference<>(new CustomDialogFragment());
         instance.get().dialogFragmentOnclickListener = dialogFragmentOnclickListener;
         instance.get().layoutResource = layoutResource;
@@ -116,9 +114,7 @@ public class CustomDialogFragment extends DialogFragment {
         CustomDialogFragment customDialogFragment =
                 newInstance(dialogFragmentOnclickListener, layoutResource
                         , style, titleDialogFragment, cancelable);
-        if (instance == null) {
-            instance = new SoftReference<>(customDialogFragment);
-        }
+        instance = new SoftReference<>(customDialogFragment);
         instance.get().iconDialogFragment = icon;
         return instance.get();
     }

@@ -18,6 +18,5 @@ public interface DialogFragmentOnclickListener {
     void accessAlertDialogBuilder(Dialog dialog);
     void changeDimensionDialog(Dialog view);
     void changeDimensionViewDialog();
-
     DialogInterface.OnDismissListener actionOnDismissListener();
 }

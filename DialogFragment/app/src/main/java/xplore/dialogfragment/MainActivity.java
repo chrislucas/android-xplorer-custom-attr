@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements DialogFragmentOnc
     @Override
     public void accessAlertDialogBuilder(AlertDialog.Builder builder) {
         /**
-         * Aqui podemos definir se o nosso fragmente vai ter botao
+         * Aqui podemos definir se o nosso fragment vai ter botao
          * de 'Resposta positiva/negativa', adicionar uma implementacao
          * de {@link DialogInterface.OnClickListener} entre outras coisas
          **/
@@ -110,10 +110,6 @@ public class MainActivity extends AppCompatActivity implements DialogFragmentOnc
          * O codigo abaixo eh um exemplo. O melhor é implmentar
          * ou {@link DialogFragmentOnclickListener#changeDimensionDialog(Dialog)}
          * */
-        t();
-    }
-
-    private void t() {
         View view = dialogFragment.getViewDialogFragment();
         if (view != null) {
             DisplayMetrics dm   = getResources().getDisplayMetrics();
@@ -132,6 +128,7 @@ public class MainActivity extends AppCompatActivity implements DialogFragmentOnc
             );
         }
     }
+
 
     @Override
     public DialogInterface.OnDismissListener actionOnDismissListener() {
