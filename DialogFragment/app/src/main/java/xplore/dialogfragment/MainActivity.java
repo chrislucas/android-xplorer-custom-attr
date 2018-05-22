@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements DialogFragmentOnc
     }
 
     @Override
-    public void accessAlertDialogBuilder(Dialog dialog) {
+    public void accessDialog(Dialog dialog) {
         /**
          * como esse dialog vai servir para mostrar uma imagem redimensionavel
          * nao precisamos dos botoes

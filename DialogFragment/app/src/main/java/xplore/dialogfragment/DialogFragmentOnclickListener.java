@@ -15,7 +15,7 @@ import android.view.View;
 public interface DialogFragmentOnclickListener {
     void accessViewDialogFragment(View rootView);
     void accessAlertDialogBuilder(AlertDialog.Builder builder);
-    void accessAlertDialogBuilder(Dialog dialog);
+    void accessDialog(Dialog dialog);
     void changeDimensionDialog(Dialog view);
     void changeDimensionViewDialog();
     DialogInterface.OnDismissListener actionOnDismissListener();

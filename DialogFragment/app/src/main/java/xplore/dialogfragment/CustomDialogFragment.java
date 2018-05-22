@@ -180,6 +180,7 @@ public class CustomDialogFragment extends DialogFragment {
 
         this.dialogFragmentOnclickListener.accessAlertDialogBuilder(builder);
         this.dialogFragmentOnclickListener.changeDimensionDialog(dialog);
+        this.dialogFragmentOnclickListener.accessDialog(dialog);
         this.dialogFragmentOnclickListener.changeDimensionViewDialog();
         return this.dialog;
     }
